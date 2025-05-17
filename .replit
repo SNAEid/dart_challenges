@@ -1,0 +1,40 @@
+modules = ["dart"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["dart"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Dart Application"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "dart_execution"
+
+[[workflows.workflow]]
+name = "Dart Application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dart run main.dart"
+
+[[workflows.workflow]]
+name = "dart_execution"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dart main.dart"
+
+[deployment]
+run = ["sh", "-c", "dart run main.dart"]

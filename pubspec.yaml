@@ -1,0 +1,9 @@
+name: data_structures_challenges
+description: Implementation of various stack and linked list data structure challenges in Dart.
+version: 1.0.0
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dev_dependencies:
+  test: ^1.22.0
