@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data Structures Challenges - Dart Implementation
 
 This repository contains Dart implementations of various stack and linked list data structure challenges with comprehensive solutions and tests.
@@ -46,3 +47,6 @@ This repository contains Dart implementations of various stack and linked list d
 
 ## Project Structure
 
+=======
+# dart_challenges
+>>>>>>> 4f9e150e6b8fb52aea37266bf487310f95d7d55d
